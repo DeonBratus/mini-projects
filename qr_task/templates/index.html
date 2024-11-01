@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Link Updater</title>
+</head>
+<body>
+    <h1>QR Code Link Updater</h1>
+
+    <!-- Форма для обновления ссылки -->
+    <form action="/" method="POST">
+        <label for="url">Введите новую ссылку:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Обновить ссылку</button>
+    </form>
+
+    <!-- Отображение текущей ссылки -->
+    <h2>Текущая ссылка:</h2>
+    <p>{{ current_url }}</p>
+
+    <!-- QR-код -->
+    <h2>QR Код:</h2>
+    <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code">
+
+</body>
+</html>
