@@ -1,0 +1,119 @@
+/* Основные стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #bb86fc;
+}
+
+/* Поле поиска */
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #bb86fc;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #5300b8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9b6bc7;
+}
+
+/* Блок отображения погоды */
+.weather-display {
+    display: flex;
+    gap: 20px;
+}
+
+/* Текущая погода */
+.weather-now {
+    flex: 1;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.weather-now h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #bb86fc;
+}
+
+.weather-now p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Прогноз на 5 дней */
+.forecast {
+    flex: 2;
+    display: flex;
+    gap: 10px;
+}
+
+.weather-card {
+    flex: 1;
+    padding: 15px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+.weather-card h3 {
+    font-size: 1.2rem;
+    color: #bb86fc;
+    margin-bottom: 10px;
+}
+
+.weather-card p {
+    font-size: 1rem;
+}

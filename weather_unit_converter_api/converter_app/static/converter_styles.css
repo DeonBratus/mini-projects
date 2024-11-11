@@ -1,0 +1,126 @@
+/* Основные стили для светлой темы */
+body {
+    background-color: #0f0f11; /* Светлый фон */
+    color: #333; /* Темно-серый цвет текста для контраста */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;  
+    padding: 10px;
+}
+
+/* Заголовки */
+h1 {
+    color: #3f51b5; /* Глубокий синий цвет для заголовка */
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Стили для блока с ссылками (кнопками) горизонтально */
+div.converter-type-button {
+    display: flex;
+    flex-direction: row; /* Горизонтальное расположение */
+    gap: 15px; /* Отступы между кнопками */
+    justify-content: center; /* Центрирование кнопок по горизонтали */
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Стили для ссылок, чтобы они выглядели как кнопки */
+div.converter-type-button a {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #3f51b5; /* Синий фон */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+div.converter-type-button a:hover {
+    background-color: #303f9f; /* Темнее при наведении */
+    transform: scale(1.05); /* Увеличение кнопки */
+}
+
+div.converter-type-button a:active {
+    background-color: #1a237e; /* Более темный оттенок при нажатии */
+}
+
+/* Блок с сообщением */
+h2.message {
+    color: #ff9800; /* Теплый оранжевый для сообщений */
+    font-size: 1.2em;
+    text-align: center; /* Центрируем текст */
+    margin-top: 20px;
+}
+
+/* Основной блок с формой */
+form {
+    background-color: #1b1b1b; /* Белый фон для формы */
+    border-radius: 10px;
+    padding: 25px;
+    width: 380px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для полей ввода */
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #555; /* Темно-серый цвет для текста меток */
+}
+
+/* Ввод значений */
+input.value_input, select.unit_select {
+    background-color: #f1f1f1; /* Светлый фон для инпутов и селектов */
+    color: #333; /* Темный цвет текста */
+    border: 1px solid #ccc; /* Легкая серая граница */
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input.value_input:focus, select.unit_select:focus {
+    background-color: #ffffff; /* Белый фон при фокусе */
+    border-color: #3f51b5; /* Синий цвет границы при фокусе */
+    outline: none;
+}
+
+/* Стили для основной кнопки */
+button[type="submit"] {
+    background-color: #3f51b5; /* Синий фон кнопки */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #303f9f; /* Темнее при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+button[type="submit"]:active {
+    background-color: #1a237e; /* Более темный оттенок при нажатии */
+}
+
